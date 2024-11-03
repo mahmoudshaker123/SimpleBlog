@@ -8,11 +8,13 @@
 <body>
     <h1>Blog Posts</h1>
     {% for post in posts %}
-        <div class="post">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-            <p>Posted on: {{ post.created_at }}</p>
-        </div>
-    {% endfor %}
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+        <p>Published by: {{ post.author.username }}</p>  <!-- عرض اسم الناشر -->
+        <p>{{ post.content }}</p>
+        <p>Posted on: {{ post.created_at }}</p>
+    </div>
+{% endfor %}
+
 </body>
 </html>

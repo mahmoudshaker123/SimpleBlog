@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",  # تأكد من استخدام BASE_DIR ككائن Path
 ]
+
+LOGIN_URL = '/accounts/login/'  # تأكد من تطابق المسار مع URL تسجيل الدخول لديك
